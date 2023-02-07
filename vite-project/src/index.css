@@ -18,8 +18,14 @@
   -webkit-text-size-adjust: 100%;
 }
 
-.neumo {
-  border-radius: 40px;
+.neumosmall {
+  border-radius: 10px;
   background: #c7bdbd;
   box-shadow: 15px 15px 30px #9d9595, -15px -15px 30px #f1e5e5;
+}
+
+.neumo {
+  border-radius: 10px;
+  background: #c7bdbd;
+  box-shadow: 15px 15px 5px #9d9595, -15px -15px 5px #f1e5e5;
 }
