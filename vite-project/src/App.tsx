@@ -4,8 +4,6 @@ import BoxContext from './Components/BoxContext';
 import axios from "axios";
 
 
-let ACCESS_KEY = "WYABwphbfiRge6jE6BKRM50f-Hmowv63FEQoXRVx_VU";
-
 function App() {
   const [selectedObject, setSelectedObject] = useState({});
   const [isOpen, setIsOpen] = useState<boolean>(false);
