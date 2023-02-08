@@ -18,14 +18,14 @@
   -webkit-text-size-adjust: 100%;
 }
 
-.neumosmall {
+.neumo {
   border-radius: 10px;
   background: #c7bdbd;
   box-shadow: 15px 15px 30px #9d9595, -15px -15px 30px #f1e5e5;
 }
 
-.neumo {
+.neumosmall {
   border-radius: 10px;
   background: #c7bdbd;
-  box-shadow: 15px 15px 5px #9d9595, -15px -15px 5px #f1e5e5;
+  box-shadow: 15px 15px 40px #9d9595, -15px -15px 40px #f1e5e5;
 }

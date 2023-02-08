@@ -1,6 +1,7 @@
-import React from "react";
+import React, { useState, useEffect } from "react";
 import Filters from "./Filters";
 import GalleryItems from "./GalleryItems";
+import axios from "axios";
 
 type Props = {};
 
@@ -11,9 +12,8 @@ const Layout = (props: Props) => {
         <Filters />
       </div>
       <div className="col-span-4">
-        <div className="neumosmall grid-cols-4 w-[100%] h-full p-3">
-        <GalleryItems/>
-
+        <div className="border-2 rounded-lg shadow-md overflow-scroll gap-3 bg-slate-200 grid sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-5 grid-cols-4 w-[100%] h-full p-3">
+          <GalleryItems />
         </div>
       </div>
     </div>

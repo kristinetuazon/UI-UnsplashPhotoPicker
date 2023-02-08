@@ -1,17 +1,19 @@
 import React from "react";
-import { useState } from "react";
-import IconOne from "/public/search2-svgrepo-com.svg";
-import IconTwo from "/public/search-normal-1-svgrepo-com.svg";
+import { useState, useContext } from "react";
+import IconOne from "/search2-svgrepo-com.svg";
+import IconTwo from "/search-normal-1-svgrepo-com.svg";
+import axios from "axios";
+import BoxContext from "./BoxContext";
 
 type Props = {};
 
 const Filters = (props: Props) => {
-  const [value, setValue] = useState<string>("");
+let contextValue = useContext(BoxContext);
+let {onSearch,
+  value,
+  setValue} = contextValue;
 
-  const onSearch = (searchTerm:string) => {
-    //api fetch search results
-    console.log("search term:", searchTerm);
-  }
+
 
   return (
     <>
